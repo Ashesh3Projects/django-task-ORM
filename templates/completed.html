@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Completed Tasks</title>
+</head>
+
+<body>
+    <a href="/">Home</a><br>
+    <hr><br>
+    <h1>Completed Tasks</h1>
+    <ol>
+        {% for task in tasks %}
+        <li>{{task}}</li>
+        {% endfor %}
+    </ol>
+</body>
+
+</html>

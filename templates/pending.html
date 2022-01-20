@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Pending Tasks</title>
+</head>
+
+<body>
+    <a href="/">Home</a><br>
+    <hr><br>
+    <h1>Pending Tasks</h1>
+    <ol>
+        {% for task in tasks %}
+        <li>{{task.title}} <a href="/complete_task/{{task.id}}/">Complete Task</a> <a href="/delete-task/{{task.id}}/">Delete Task</a></li>
+        {% endfor %}
+    </ol>
+</body>
+
+</html>
